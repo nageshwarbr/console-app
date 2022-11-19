@@ -4,7 +4,6 @@ using System.IO;
 using System.Reflection;
 using CommandDotNet.Extensions;
 using CommandDotNet.Logging;
-using CommandDotNet.AppInfoOverride;
 
 namespace CommandDotNet.Builders
 {
