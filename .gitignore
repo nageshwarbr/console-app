@@ -1,0 +1,15 @@
+.idea
+obj
+bin
+output
+.vscode
+CommandDotNet.sln.DotSettings.user
+.vs/
+*.ncrunchsolution.user
+public
+site/
+Pipfile.lock
+*.user
+/CommandDotNet.Example/CommandDotNet.Example.exe
+DevDefaultTestConfig.cs
+.DS_Store

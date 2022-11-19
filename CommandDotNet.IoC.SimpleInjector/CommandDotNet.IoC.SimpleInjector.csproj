@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>CommandDotNet.IoC.SimpleInjector</AssemblyTitle>
+    <Description>Configures SimpleInjector for dependency injection</Description>
+    <PackageTags>dotnet core; console; argument parse; simpleinjector;</PackageTags>
+    <ReleaseNotes>https://commanddotnet.bilal-fazlani.com/releasenotes/commanddotnet.ioc.simpleinjector/</ReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="5.3.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommandDotNet\CommandDotNet.csproj" />
+  </ItemGroup>
+</Project>

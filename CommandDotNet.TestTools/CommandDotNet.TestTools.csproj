@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>CommandDotNet.TestTools</AssemblyTitle>
+    <Description>Test your CommandDotNet application</Description>
+    <PackageTags>dotnet core; console; argument parse; test;</PackageTags>
+    <ReleaseNotes>https://commanddotnet.bilal-fazlani.com/releasenotes/commanddotnet.testtools/</ReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="output\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommandDotNet\CommandDotNet.csproj" />
+  </ItemGroup>
+</Project>

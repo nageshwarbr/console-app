@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyTitle>CommandDotNet.Spectre</AssemblyTitle>
+        <Description>Integrate Spectre Console utilities into CommandDotNet</Description>
+        <PackageTags>dotnet core; console; prompt; ansi; tables</PackageTags>
+    <ReleaseNotes>https://commanddotnet.bilal-fazlani.com/releasenotes/commanddotnet.spectre/</ReleaseNotes>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Remove="output\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Remove="output\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="output\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CommandDotNet\CommandDotNet.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Spectre.Console" Version="0.42.0" />
+      <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>

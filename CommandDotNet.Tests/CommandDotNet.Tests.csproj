@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="JsonDiffPatch.Net" Version="2.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="Namotion.Reflection" Version="2.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Spectre.Console" Version="0.42.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommandDotNet.DataAnnotations\CommandDotNet.DataAnnotations.csproj" />
+    <ProjectReference Include="..\CommandDotNet.FluentValidation\CommandDotNet.FluentValidation.csproj" />
+    <ProjectReference Include="..\CommandDotNet.NewerReleasesAlerts\CommandDotNet.NewerReleasesAlerts.csproj" />
+    <ProjectReference Include="..\CommandDotNet.IoC.Autofac\CommandDotNet.IoC.Autofac.csproj" />
+    <ProjectReference Include="..\CommandDotNet.IoC.MicrosoftDependencyInjection\CommandDotNet.IoC.MicrosoftDependencyInjection.csproj" />
+    <ProjectReference Include="..\CommandDotNet.IoC.SimpleInjector\CommandDotNet.IoC.SimpleInjector.csproj" />
+    <ProjectReference Include="..\CommandDotNet.NameCasing\CommandDotNet.NameCasing.csproj" />
+    <ProjectReference Include="..\CommandDotNet.Spectre.Testing\CommandDotNet.Spectre.Testing.csproj" />
+    <ProjectReference Include="..\CommandDotNet.Spectre\CommandDotNet.Spectre.csproj" />
+    <ProjectReference Include="..\CommandDotNet.TestTools\CommandDotNet.TestTools.csproj" />
+    <ProjectReference Include="..\CommandDotNet\CommandDotNet.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestCases/**/*" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
